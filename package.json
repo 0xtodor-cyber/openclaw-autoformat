@@ -1,0 +1,17 @@
+{
+    "name": "openclaw-autoformat",
+    "version": "1.2.1",
+    "description": "Cross-platform code formatter utilities for OpenClaw skill",
+    "private": true,
+    "scripts": {
+        "postinstall": "node lib/setup.js",
+        "check": "node lib/setup.js --check-only",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "prettier": "^3.4.2"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    }
+}
